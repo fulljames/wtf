@@ -13,7 +13,7 @@ form(action="/",method="post")
 
     //-    button wtf?
 
-ul(data-bind="foreach: matches")
+ul.matches(data-bind="foreach: matches")
     li
         a(data-bind="text: label,attr: { 'href': src }")
         p(data-bind="text: description")

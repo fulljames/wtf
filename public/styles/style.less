@@ -20,6 +20,12 @@
     font-size: @var;
 }
 
+.list_reset() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -46,6 +52,42 @@ aside, nav, article, figure {
 	display: block;
 }
 
+#wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+
+    small {
+        display: block;
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0 20px;
+        color: #ddd;
+
+        a {
+            color: #999;
+        }
+    }
+}
+
+ul.matches {
+    .list_reset;
+    margin-top: 1em;
+    
+    li {
+        background-color: #eee;
+    }
+}
 
 @media screen and (max-width: 930px) {
 }
