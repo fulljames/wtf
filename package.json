@@ -1,0 +1,12 @@
+{ "name": "What the Framework",
+    "version": "0.0.0",
+    "description": "Instant search/lookup for that obscure web framework someone just mentioned.",
+    "author": "stephen@fulljames.net",
+    "dependencies": {
+        "express": "latest",
+        "jade": "latest",
+        "less": "latest",
+        "underscore": "latest"
+    },
+    "engine": "node >=0.6.0"
+}
