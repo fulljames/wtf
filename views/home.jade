@@ -1,6 +1,19 @@
+p We've all been there. You're at a tech meetup and someone is all like "Yeah I built this thing out of&nbsp;
+    a(href="/s/cake",data-bind="click: set") Cake
+    | ,
+    a(href="/s/celery",data-bind="click: set") Celery
+    |  and
+    a(href="/s/varnish",data-bind="click: set") Varnish
+    | " and you've no idea if they're talking about web frameworks or some kind of horrific dessert. Well wonder no longer!
+
 form(action="/",method="post")
     label
-        span I have no idea about
-        input
+        span I have no idea about:
+        input(data-bind="value: input,valueUpdate: 'keyup'")
 
-    button wtf?
+    //-    button wtf?
+
+ul(data-bind="foreach: matches")
+    li
+        a(data-bind="text: label,attr: { 'href': src }")
+        p(data-bind="text: description")

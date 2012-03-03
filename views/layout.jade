@@ -16,6 +16,22 @@ html(lang="en")
     body
 
         header
-                h1 What the F*******k?
+            h1 What the F*******k?
 
         != body
+
+        footer
+            small WTF itself runs on&nbsp;
+                a(href="/s/node",data-bind="click: set") Node
+                | ,
+                a(href="/s/express",data-bind="click: set") Express
+                |  and
+                a(href="/s/underscore",data-bind="click: set") Underscore
+
+        script
+            var data = !{JSON.stringify(data)};;
+
+        script(src="/js/lib/jquery-1.7.min.js")
+        script(src="/js/lib/underscore-min.js")
+        script(src="/js/lib/knockout-2.0.0.js")
+        script(src="/js/site.js")
