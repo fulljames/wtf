@@ -4,6 +4,11 @@ var data = {
         'src': "http://nodejs.org",
         'description': "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
     },{
+        'label': "Ender",
+        'src': "http://ender.no.de",
+        'description': "Ender is a full featured package manager for your browser. It allows you to search, install, manage, and compile front-end javascript packages and their dependencies for the web. We like to think of it as NPM's little sister."
+    },
+    {
         'label': "Express",
         'src': "http://expressjs.com",
         'description': "High performance, high class web development for Node.js"

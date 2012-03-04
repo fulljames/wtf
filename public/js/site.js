@@ -16,7 +16,7 @@ wtf.models.Page = function(data) {
     this.input = ko.observable();
     this.matches = ko.observableArray();
 
-    this.h1w = ko.observable($('h1').width());
+    this.h1w = ko.observable($('h1')[0].clientWidth);
     this.headerSizePx = ko.computed(function() {
         return wtf.funcs.resizer(self.h1w()) + 'px';
     });
@@ -29,7 +29,7 @@ wtf.models.Page = function(data) {
             return;
         }
 
-        var result = _.filter(data.items,function(item) {
+        var result = $.filter(data.items,function(item) {
             return item.label.toLowerCase().indexOf(value.toLowerCase()) != -1;
         })
 
@@ -45,11 +45,12 @@ wtf.models.Page = function(data) {
 
 }
 
-$(function() {
+$(document).ready(function () {
+
     var viewmodel = new wtf.models.Page(data);
     ko.applyBindings(viewmodel);
 
-    $(window).resize(function() {
-        viewmodel.h1w($('h1').width());
-    })
+    $(window).resize(function(e) {
+        viewmodel.h1w($('h1')[0].clientWidth);
+    });
 });
