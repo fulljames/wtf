@@ -8,12 +8,12 @@ p We've all been there. You're at a tech meetup and someone is all like "Yeah I 
 
 form(action="/",method="post")
     label
-        span I have no idea about:
+        span I have no idea about
         input(data-bind="value: input,valueUpdate: 'keyup'")
 
     //-    button wtf?
 
 ul.matches(data-bind="foreach: matches")
     li
-        a(data-bind="text: label,attr: { 'href': src }")
+        h2: a(data-bind="text: label,attr: { 'href': src }")
         p(data-bind="text: description")

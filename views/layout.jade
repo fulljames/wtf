@@ -7,11 +7,18 @@ html(lang="en")
         meta(name="robots",content="index, follow")
         meta(name="viewport",content="width=device-width, initial-scale=1.0")
         link(rel="shortcut icon", href="favicon.ico")
+        link(rel="apple-touch-icon-precomposed",href="apple-touch-icon-precomposed.png")
+
         //if IE
             meta(http-equiv="imagetoolbar", content="no")
             script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
 
         link(rel="stylesheet",href="/styles/style.css",type="text/css",media="screen")
+
+        // lab
+        script(src="http://use.typekit.com/vsf0qye.js")
+        script
+            try{Typekit.load();}catch(e){}
 
     body
 
@@ -22,13 +29,13 @@ html(lang="en")
 
             != body
 
-        footer
-            small WTF itself runs on&nbsp;
-                a(href="/s/node",data-bind="click: set") Node
-                | ,
-                a(href="/s/express",data-bind="click: set") Express
-                |  and
-                a(href="/s/underscore",data-bind="click: set") Underscore
+            footer
+                small WTF itself runs on&nbsp;
+                    a(href="/s/node",data-bind="click: set") Node
+                    | ,
+                    a(href="/s/express",data-bind="click: set") Express
+                    |  and
+                    a(href="/s/underscore",data-bind="click: set") Underscore
 
         script
             var data = !{JSON.stringify(data)};;
@@ -36,4 +43,5 @@ html(lang="en")
         script(src="/js/lib/jquery-1.7.min.js")
         script(src="/js/lib/underscore-min.js")
         script(src="/js/lib/knockout-2.0.0.js")
+        script(src="/js/lib/jquery.fittext.js")
         script(src="/js/site.js")

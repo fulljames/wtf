@@ -32,6 +32,8 @@ wtf.models.Page = function(data) {
 
 $(function() {
 
+    $("h1").fitText();
+
     var viewmodel = new wtf.models.Page(data);
     ko.applyBindings(viewmodel);
 
