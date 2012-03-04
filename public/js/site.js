@@ -1,10 +1,25 @@
 var wtf = wtf || { models: {}, funcs: {} };
 
+wtf.settings = {
+    'minFontSize' : Number.NEGATIVE_INFINITY,
+    'maxFontSize' : Number.POSITIVE_INFINITY
+}
+
+// modified from FitText.js 1.0
+// Copyright 2011, Dave Rupert http://daverupert.com
+wtf.funcs.resizer = function(w) {
+    return Math.max(Math.min(w / 10, parseFloat(wtf.settings.maxFontSize)), parseFloat(wtf.settings.minFontSize))
+}
+
 wtf.models.Page = function(data) {
     var self = this;
-
     this.input = ko.observable();
     this.matches = ko.observableArray();
+
+    this.h1w = ko.observable($('h1').width());
+    this.headerSizePx = ko.computed(function() {
+        return wtf.funcs.resizer(self.h1w()) + 'px';
+    });
 
     this.input.subscribe(function(value) {
 
@@ -31,10 +46,10 @@ wtf.models.Page = function(data) {
 }
 
 $(function() {
-
-    $("h1").fitText();
-
     var viewmodel = new wtf.models.Page(data);
     ko.applyBindings(viewmodel);
 
-})
+    $(window).resize(function() {
+        viewmodel.h1w($('h1').width());
+    })
+});
