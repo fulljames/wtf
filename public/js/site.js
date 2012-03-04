@@ -29,6 +29,11 @@ wtf.models.Page = function(data) {
             return;
         }
 
+        if (value.toLowerCase() == 'anything') {
+            self.matches(data.items);
+            return;
+        }
+
         var result = $.filter(data.items,function(item) {
             return item.label.toLowerCase().indexOf(value.toLowerCase()) != -1;
         })
