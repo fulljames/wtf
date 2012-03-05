@@ -1,3 +1,5 @@
+var _ = require('underscore');
+
 /*
     {
         'label': "",
@@ -99,5 +101,24 @@ var data = {
 };
 
 exports.index = function (req, res) {
-    res.render("home", { title: 'What the Framework?', data: data });
+    var term = req.route.params.term || null;
+    var title = 'What the Framework?';
+
+    if (term) {
+        if (term.toLowerCase() == 'anything') {
+            data.term = term;
+            title += ' - *';
+        } else {
+            var match = (_.find(data.items,function(item) {
+                return item.label.toLowerCase() == term.toLowerCase();
+            }));
+
+            if (match) {
+                data.term = term;
+                title += ' - ' +match.label;
+            }
+        }
+    }
+
+    res.render("home", { title: title, data: data });
 };

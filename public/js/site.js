@@ -48,6 +48,10 @@ wtf.models.Page = function(data) {
         self.input(result);
     }
 
+    if (data.term) {
+        this.input(data.term);
+    }
+
 }
 
 $(document).ready(function () {
