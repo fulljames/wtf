@@ -101,6 +101,8 @@ var data = {
 };
 
 exports.index = function (req, res) {
+    data.term = null;
+
     var term = req.route.params.term || null;
     var title = 'What the Framework?';
 
