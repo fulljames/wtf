@@ -30,9 +30,17 @@ var data = {
         'src': "http://codeigniter.com/",
         'description': "CodeIgniter is a powerful PHP framework with a very small footprint, built for PHP coders who need a simple and elegant toolkit to create full-featured web applications. "
     },{
+        'label': "Cujo",
+        'src': "https://github.com/unscriptable/cujo/wiki/Intro",
+        'description': "At its core, cujo.js is an MVC framework that runs in the browser. An MVC framework embraces the concepts of data models, views, and controllers. Data models are abstractions of structured data. Views display and collect information to/from users. Controllers orchestrate and execute the behaviors of an application."
+    },{
         'label': "Django",
         'src': "https://www.djangoproject.com/",
         'description': "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design."
+    },{
+        'label': "Dojo Toolkit",
+        'src': "http://dojotoolkit.org/",
+        'description': "Dojo saves you time and scales with your development process, using web standards as its platform. It’s the toolkit experienced developers turn to for building high quality desktop and mobile web applications."
     },{
         'label': "Drupal",
         'src': "http://drupal.org/",
@@ -54,9 +62,17 @@ var data = {
         'src': "http://grails.org/",
         'description': "Grails is a high-productivity web framework based on the Groovy language that embraces the coding by convention paradigm, but is designed specifically for the Java platform."
     },{
+        'label': "jQuery",
+        'src': "http://jquery.com/",
+        'description': "jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript."
+    },{
         'label': "Knockout",
         'src': "http://knockoutjs.com/",
         'description': "Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern"
+    },{
+        'label': "MooTools",
+        'src': "http://mootools.net/",
+        'description': "MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer. It allows you to write powerful, flexible, and cross-browser code with its elegant, well documented, and coherent API."
     },{
         'label': "Node",
         'src': "http://nodejs.org",
@@ -94,6 +110,14 @@ var data = {
         'src': "https://www.varnish-cache.org/",
         'description': "Varnish is a web application accelerator. You install it in front of your web application and it will speed it up significantly."
     },{
+        'label': "Wink Toolkit",
+        'src': "http://www.winktoolkit.org/",
+        'description': "Wink Toolkit is a lightweight JavaScript toolkit which will help you build great mobile web apps. It is designed and developed to meet the specific constraints of the mobile environment."
+    },{
+        'label': "YUI Library",
+        'src': "http://developer.yahoo.com/yui/",
+        'description': "YUI is a free, open source JavaScript and CSS framework for building richly interactive web applications. YUI is provided under a BSD license and is available on GitHub for forking and contribution."
+    },{
         'label': "Zend",
         'src': "http://framework.zend.com/",
         'description': "Extending the art & spirit of PHP, Zend Framework is based on simplicity, object-oriented best practices, corporate friendly licensing, and a rigorously tested agile codebase."
@@ -102,25 +126,40 @@ var data = {
 
 exports.index = function (req, res) {
     data.term = null;
-
-    var term = req.route.params.term || null;
+    var term = null;
     var title = 'What the Framework?';
 
-    if (term) {
-        if (term.toLowerCase() == 'anything') {
-            data.term = term;
-            title += ' - *';
-        } else {
-            var match = (_.find(data.items,function(item) {
-                return item.label.toLowerCase() == term.toLowerCase();
-            }));
-
-            if (match) {
+    var next = function() {
+        if (term) {
+            if (term.toLowerCase() == 'anything' || term.toLowerCase() == '*') {
                 data.term = term;
-                title += ' - ' +match.label;
+                title += ' - *';
+            } else {
+                var match = (_.find(data.items,function(item) {
+                    return item.label.toLowerCase() == term.toLowerCase();
+                }));
+
+                if (match) {
+                    data.term = term;
+                    title += ' - ' +match.label;
+                }
             }
         }
+        res.render("home", { title: title, data: data });
     }
 
-    res.render("home", { title: title, data: data });
+    if (req.method == 'POST') {
+        req.on('data', function(chunk) {
+            var pair = chunk.toString().split('=');
+
+            if (pair[0] == 'term') {
+                term = pair[1];
+            }
+        });
+
+        req.on('end', next);
+    } else {
+        term = req.route.params.term;
+        next();
+    }
 };

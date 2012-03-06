@@ -25,14 +25,15 @@ wtf.models.Page = function(data) {
 
         self.matches([]);
 
+        if (value.toLowerCase() == 'anything' || value.toLowerCase() == '*') {
+            self.matches(data.items);
+            return;
+        }
+
         if (!value || value.length < 2) {
             return;
         }
 
-        if (value.toLowerCase() == 'anything') {
-            self.matches(data.items);
-            return;
-        }
 
         var result = $.filter(data.items,function(item) {
             return item.label.toLowerCase().indexOf(value.toLowerCase()) != -1;
@@ -42,6 +43,9 @@ wtf.models.Page = function(data) {
     });
 
     this.set = function(d,e) {
+
+        var context = ko.dataFor(e);
+
         var parts = e.target.href.split('/');
         var result = parts[parts.length-1];
 
