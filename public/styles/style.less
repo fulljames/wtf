@@ -2,7 +2,7 @@
 
 /* Reset ************/
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, em, img, small, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, section, summary, time, mark, audio, video {
+html, body, div, span, h1, h2, p, small, ul, li, fieldset, form, label, footer, header {
     margin:0;
     padding:0;
     border:0;
@@ -16,7 +16,7 @@ body {
     line-height:1;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+footer, header {
     display:block;
 }
 
@@ -32,27 +32,10 @@ a {
     outline:none;
 }
 
-/* Clearfix ************/
-
-.cf:before,
-.cf:after {
-    content:"";
-    display:table;
-}
-
-.cf:after {
-    clear:both;
-}
-
-.cf {
-    zoom:1;
-}
-
 /* Less ************/
 
 @sans :"proxima-nova-soft",sans-serif;
 @serif :"museo-slab",serif;
-
 
 .rounded (@radius: 1em) {
     border-radius: @radius;
@@ -203,10 +186,7 @@ footer {
 
 }
 
-
-
 /* Devices ************/
-
 
 @media screen and (max-width:840px) {
     body {
@@ -257,6 +237,7 @@ footer {
             margin:1em 0;
             width:100%;
             font-size:1.8rem;
+			text-align:center;
         }
     }
 
