@@ -30,6 +30,14 @@ var data = {
         'src': "http://batmanjs.org/",
         'description': "Batman.js is a framework for building rich web applications with CoffeeScript or JavaScript. App code is concise and declarative, thanks to a powerful system of view bindings and observable properties. The API is designed with developer and designer happiness as its first priority."
     },{
+        'label': "Behat",
+        'src': "http://behat.org/",
+        'description': "Behat was inspired by Ruby's Cucumber project and especially its syntax part (Gherkin). It tries to be like Cucumber with input (Feature files) and output (console formatters), but in core, it has been built from the ground on pure php with Symfony2 components."
+    },{
+        'label': "Bootstrap",
+        'src': "http://twitter.github.com/bootstrap/",
+        'description': "Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions."
+    },{
         'label': "Buster.js",
         'src': "http://busterjs.org/",
         'description': "Buster.JS is a new JavaScript testing framework. It does browser testing by automating test runs in actual browsers (think JsTestDriver), as well as Node.js testing. "
@@ -62,9 +70,17 @@ var data = {
         'src': "http://coffeescript.org/",
         'description': "CoffeeScript is a little language that compiles into JavaScript. Underneath all those awkward braces and semicolons, JavaScript has always had a gorgeous object model at its heart. CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way."
     },{
+        'label': "Compass",
+        'src': "http://compass-style.org/",
+        'description': "Compass is an open-source CSS authoring framework which uses the Sass stylesheet language to make writing stylesheets powerful and easy."
+    },{
         'label': "CouchDB",
         'src': "http://couchdb.apache.org/",
         'description': "Apache CouchDB is a document-oriented database that can be queried and indexed using JavaScript in a MapReduce fashion. CouchDB also offers incremental replication with bi-directional conflict detection and resolution."
+    },{
+        'label': "Cucumber",
+        'src': "http://cukes.info/",
+        'description': "Cucumber lets software development teams describe how software should behave in plain text. The text is written in a business-readable domain-specific language and serves as documentation, automated tests and development-aid - all rolled into one format."
     },{
         'label': "Cujo",
         'src': "https://github.com/unscriptable/cujo/wiki/Intro",
@@ -77,6 +93,10 @@ var data = {
         'label': "Django",
         'src': "https://www.djangoproject.com/",
         'description': "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design."
+    },{
+        'label': "Doctrine",
+        'src': "http://www.doctrine-project.org/",
+        'description': "The Doctrine Project is the home of a selected set of PHP libraries primarily focused on providing persistence services and related functionality. Its prize projects are a Object Relational Mapper and the Database Abstraction Layer it is built on top of."
     },{
         'label': "Dojo Toolkit",
         'src': "http://dojotoolkit.org/",
@@ -106,6 +126,14 @@ var data = {
         'src': "http://www.sencha.com/products/extjs",
         'description': "Ext JS 4 is the next major advancement in our JavaScript framework. Featuring expanded functionality, plugin-free charting, and a new MVC architecture it's the best Ext JS yet. "
     },{
+        'label': "Flask",
+        'src': "http://flask.pocoo.org/",
+        'description': "Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed!"
+    },{
+        'label': "Foundation",
+        'src': "http://foundation.zurb.com/",
+        'description': "An easy to use, powerful, and flexible framework for building prototypes and production code on any kind of device. Start here, build everywhere."
+    },{
         'label': "Go",
         'src': "http://golang.org/",
         'description': "The Go programming language is an open source project to make programmers more productive. Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction."
@@ -118,6 +146,10 @@ var data = {
         'src': "http://grails.org/",
         'description': "Grails is a high-productivity web framework based on the Groovy language that embraces the coding by convention paradigm, but is designed specifically for the Java platform."
     },{
+        'label': "Hadoop",
+        'src': "http://hadoop.apache.org/",
+        'description': "The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using a simple programming model. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage."
+    },{
         'label': "HAML",
         'src': "http://haml-lang.com/",
         'description': "Haml takes your gross, ugly templates and replaces them with veritable Haiku. Haml is the next step in generating views in your Rails application. Haml is a refreshing take that is meant to free us from the shitty templating languages we have gotten used to. Haml is based on one primary principle. Markup should be beautiful."
@@ -125,6 +157,10 @@ var data = {
         'label': "Handlebars",
         'src': "http://handlebarsjs.com/",
         'description': "Handlebars provides the power necessary to let you build semantic templates effectively with no frustration. Mustache templates are compatible with Handlebars, so you can take a Mustache template, import it into Handlebars, and start taking advantage of the extra Handlebars features."
+    },{
+        'label': "Hogan.js",
+        'src': "http://twitter.github.com/hogan.js/",
+        'description': "Hogan.js is a 2.5k JS templating engine developed at Twitter. Use it as a part of your asset packager to compile templates ahead of time or include it in your browser to handle dynamic templates."
     },{
         'label': "HTML5 Boilerplate",
         'src': "http://html5boilerplate.com/",
@@ -146,6 +182,10 @@ var data = {
         'src': "http://jekyllrb.com/",
         'description': "Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server."
     },{
+        'label': "Joomla",
+        'src': "http://www.joomla.org/",
+        'description': "Joomla is one of the world’ s most popular open source CMS (content management system). With millions of websites running on Joomla, the software is used by individuals, small & medium-sized businesses, and large organizations worldwide to easily create & build a variety of websites & web-enabled applications."
+    },{
         'label': "jQ Touch",
         'src': "http://www.jqtouch.com/",
         'description': "A Zepto/jQuery plugin for mobile web development on the iPhone, Android, iPod Touch, and other forward-thinking devices."
@@ -166,6 +206,10 @@ var data = {
         'src': "http://getkirby.com/",
         'description': "Kirby is a file-based cms. Easy to setup, easy to use, flexible as hell."
     },{
+        'label': "Kohana",
+        'src': "http://kohanaframework.org/",
+        'description': "An elegant HMVC PHP5 framework that provides a rich set of components for building web applications."
+    },{
         'label': "Knockout",
         'src': "http://knockoutjs.com/",
         'description': "Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern"
@@ -177,6 +221,14 @@ var data = {
         'label': "Lua",
         'src': "http://www.lua.org/",
         'description': "Lua is a powerful, fast, lightweight, embeddable scripting language. Lua combines simple procedural syntax with powerful data description constructs based on associative arrays and extensible semantics."
+    },{
+        'label': "Memcached",
+        'src': "http://memcached.org/",
+        'description': "Free & open source, high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load."
+    },{
+       'label': "MochiKit",
+       'src': "http://mochi.github.com/mochikit/",
+       'description': "MochiKit is a highly documented and well tested, suite of JavaScript libraries that will help you get shit done, fast. We took all the good ideas we could find from our Python, Objective-C, etc. experience and adapted it to the crazy world of JavaScript."
     },{
         'label': "Moment.js",
         'src': "http://momentjs.com/",
@@ -222,13 +274,29 @@ var data = {
         'src': "http://paperjs.org",
         'description': "Paper.js is an open source vector graphics scripting framework that runs on top of the HTML5 Canvas. It offers a clean Scene Graph / Document Object Model and a lot of powerful functionality to create and work with vector graphics and bezier curves, all neatly wrapped up in a well designed, consistent and clean programming interface."
     },{
+        'label': "Phalcon",
+        'src': "http://phalconphp.com/",
+        'description': "PhalconPHP is a web framework delivered as a C extension providing high performance and lower resource consumption."
+    },{
         'label': "PhoneGap",
         'src': "http://phonegap.com/",
         'description': "PhoneGap is an HTML5 app platform that allows you to author native applications with web technologies and get access to APIs and app stores. PhoneGap leverages web technologies developers already know best... HTML and JavaScript."
     },{
+        'label': "Play",
+        'src': "http://www.playframework.org/",
+        'description': "The Play framework makes it easier to build Web applications with Java and Scala. Finally a Java Web framework made by Web developers. Discover a clean alternative to bloated enterprise Java stacks. Play focuses on developer productivity and targets RESTful architectures."
+    },{
         'label': "Processing.js",
         'src': "http://processingjs.org/",
         'description': "Processing.js is the sister project of the popular Processing visual programming language, designed for the web. Processing.js makes your data visualizations, digital art, interactive animations, educational graphs, video games, etc. work using web standards and without any plug-ins."
+    },{
+        'label': "Prototype",
+        'src': "http://www.prototypejs.org/",
+        'description': "Prototype is a JavaScript framework that aims to ease development of dynamic web applications. It offers a familiar class-style OO framework, extensive Ajax support, higher-order programming constructs, and easy DOM manipulation."
+    },{
+        'label': "Pylons",
+        'src': "http://www.pylonsproject.org/",
+        'description': "Pylons 1.0 is a lightweight web framework emphasizing flexibility and rapid development. Pylons combines the very best ideas from the worlds of Ruby, Python and Perl, providing a structured but extremely flexible Python web framework."
     },{
         'label': "Python",
         'src': "http://python.org/",
@@ -274,6 +342,10 @@ var data = {
         'src': "http://www.scala-lang.org/",
         'description': "Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages, enabling Java and other programmers to be more productive."
     },{
+        'label': "Scriptaculous",
+        'src': "http://script.aculo.us/",
+        'description': "script.aculo.us provides you with easy-to-use, cross-browser user interface JavaScript libraries to make your web sites and web applications fly."
+    },{
         'label': "Sencha Touch",
         'src': "http://www.sencha.com/products/touch",
         'description': "Build HTML5 mobile apps for iPhone, Android, and BlackBerry. With over 50 built-in components, state management, and a built-in MVC system, Sencha Touch 2 provides everything you need to create immersive mobile apps."
@@ -294,6 +366,22 @@ var data = {
         'src': "http://sproutcore.com/",
         'description': "SproutCore is an open-source framework for building blazingly fast, innovative user experiences on the web."
     },{
+        'label': "Struts",
+        'src': "http://struts.apache.org/",
+        'description': "The Apache Struts web framework is a free open-source solution for creating Java web applications."
+    },{
+        'label': "Symfony",
+        'src': "http://symfony.com/",
+        'description': "Symfony is a PHP framework for web projects. Speed up the creation and maintenance of your PHP web applications. Replace the repetitive coding tasks by power, control and pleasure."
+    },{
+        'label': "Tapestry",
+        'src': "http://tapestry.apache.org/",
+        'description': "Component oriented framework for creating dynamic, robust, highly scalable web applications in Java."
+    },{
+        'label': "Turbo Gears",
+        'src': "http://turbogears.org/",
+        'description': "TurboGears 2 is a reinvention of the TurboGears project to take advantage of new components, and to provide a fully customizable WSGI (Web Server Gateway Interface) stack. From the beginning TurboGears was designed to be a Full Stack framework built from best-of-breed components. "
+    },{
         'label': "Underscore",
         'src': "http://documentcloud.github.com/underscore/",
         'description': "Underscore is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects."
@@ -302,6 +390,10 @@ var data = {
         'src': "https://www.varnish-cache.org/",
         'description': "Varnish is a web application accelerator. You install it in front of your web application and it will speed it up significantly."
     },{
+        'label': "Wicket",
+        'src': "http://wicket.apache.org/",
+        'description': "With proper mark-up/logic separation, a POJO data model, and a refreshing lack of XML, Apache Wicket makes developing web-apps simple and enjoyable again. Swap the boilerplate, complex debugging and brittle code for powerful, reusable components written with plain Java and HTML."
+    },{
         'label': "Wink Toolkit",
         'src': "http://www.winktoolkit.org/",
         'description': "Wink Toolkit is a lightweight JavaScript toolkit which will help you build great mobile web apps. It is designed and developed to meet the specific constraints of the mobile environment."
@@ -309,6 +401,10 @@ var data = {
         'label': "Wordpress",
         'src': "http://wordpress.org/",
         'description': "WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time."
+    },{
+        'label': "Yii",
+        'src': "http://www.yiiframework.com/",
+        'description': "Yii is a high-performance PHP framework best for developing Web 2.0 applications. Yii comes with rich features: MVC, DAO/ActiveRecord, I18N/L10N, caching, authentication and role-based access control, scaffolding, testing, etc. It can reduce your development time significantly."
     },{
         'label': "YUI Library",
         'src': "http://developer.yahoo.com/yui/",
