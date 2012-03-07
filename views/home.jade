@@ -11,8 +11,6 @@ form(action="/",method="post")
         span I have no idea about
         input(name="term",value=data.term,data-bind="value: input,valueUpdate: 'keyup'")
 
-    //-    button wtf?
-
 ul.matches(data-bind="foreach: matches")
     li
         h2: a(data-bind="text: label,attr: { 'href': src }")
