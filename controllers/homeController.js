@@ -114,6 +114,10 @@ var data = {
         'src': "http://ender.no.de",
         'description': "Ender is a full featured package manager for your browser. It allows you to search, install, manage, and compile front-end javascript packages and their dependencies for the web."
     },{
+        'label': "Enyo",
+        'src': "http://enyojs.com/",
+        'description': "Enyo is an open source object-oriented JavaScript framework emphasizing encapsulation and modularity. Enyo contains everything you need to create a fast, scalable mobile or web application."
+    },{
         'label': "Erlang",
         'src': "http://www.erlang.org/",
         'description': "Erlang is a programming language used to build massively scalable soft real-time systems with requirements on high availability. Some of its uses are in telecoms, banking, e-commerce, computer telephony and instant messaging. Erlang's runtime system has built-in support for concurrency, distribution and fault tolerance."
