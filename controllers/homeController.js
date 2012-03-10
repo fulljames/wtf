@@ -124,7 +124,7 @@ var data = {
     },{
         'label': "Express",
         'src': "http://expressjs.com",
-        'description': "High performance, high class web development for Node.js"
+        'description': "Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple "
     },{
         'label': "Ext JS",
         'src': "http://www.sencha.com/products/extjs",
