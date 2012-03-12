@@ -429,6 +429,16 @@ exports.index = function (req, res) {
     var term = null;
     var title = 'What the Framework?';
 
+    var tk = null;
+
+    if (req.headers.host.indexOf('localhost') == -1) {
+        if (req.headers.host.indexOf('whattheframework') != -1) {
+            tk = 'sfv6rev';
+        } else {
+            tk = 'nou4wqq';
+        }
+    }
+
     var next = function() {
         if (term) {
             if (term.toLowerCase() == 'anything' || term.toLowerCase() == '*') {
@@ -445,7 +455,7 @@ exports.index = function (req, res) {
                 }
             }
         }
-        res.render("home", { title: title, data: data });
+        res.render("home", { title: title, data: data, tk: tk });
     }
 
     if (req.method == 'POST') {
