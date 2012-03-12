@@ -20,7 +20,7 @@ var data = {
     },{
         'label': "ASP.net MVC",
         'src': "http://www.asp.net/mvc",
-        'description': "ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup for enjoyable, agile development. ASP.NET MVC includes many features that enable fast, TDD-friendly development for creating sophisticated applications that use the latest web standards."
+        'description': "ASP.NET MVC is a framework for building scalable, standards-based web applications using well-established design patterns and the power of ASP.NET and the .NET Framework."
     },{
         'label': "Backbone",
         'src': "http://documentcloud.github.com/backbone/",
