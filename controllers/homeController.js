@@ -218,6 +218,10 @@ var data = {
         'src': "http://knockoutjs.com/",
         'description': "Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern"
     },{
+        'label': "Laravel",
+        'src': "http://laravel.com/",
+        'description': "Laravel is a clean and classy PHP framework with minimal configuration and expressive syntax. RESTful routing; ORM; beautiful code."
+    },{
         'label': "LESS",
         'src': "http://lesscss.org/",
         'description': "LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions. LESS runs on both the client-side (IE 6+, Webkit, Firefox) and server-side, with Node.js and Rhino."
@@ -229,6 +233,10 @@ var data = {
         'label': "Memcached",
         'src': "http://memcached.org/",
         'description': "Free & open source, high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load."
+    },{
+        'label': "Meteor",
+        'src': "http://meteor.com/",
+        'description': "Meteor is a set of new technologies for building top-quality webapps in a fraction of the time, whether you're an expert developer or just getting started."
     },{
        'label': "MochiKit",
        'src': "http://mochi.github.com/mochikit/",
@@ -294,6 +302,10 @@ var data = {
         'src': "http://processingjs.org/",
         'description': "Processing.js is the sister project of the popular Processing visual programming language, designed for the web. Processing.js makes your data visualizations, digital art, interactive animations, educational graphs, video games, etc. work using web standards and without any plug-ins."
     },{
+        'label': "Prontotype",
+        'src': "http://prontotype.allmarkedup.com/",
+        'description': "Prontotype is a lightweight, server-side framework to help you quickly build interactive, data-driven HTML prototypes."
+    },{
         'label': "Prototype",
         'src': "http://www.prototypejs.org/",
         'description': "Prototype is a JavaScript framework that aims to ease development of dynamic web applications. It offers a familiar class-style OO framework, extensive Ajax support, higher-order programming constructs, and easy DOM manipulation."
@@ -317,6 +329,10 @@ var data = {
         'label': "Raphaël",
         'src': "http://raphaeljs.com/",
         'description': "Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. Raphaël ['ræfeɪəl] uses the SVG W3C Recommendation and VML as a base for creating graphics."
+    },{
+        'label': "Reactive Extensions",
+        'src': "http://msdn.microsoft.com/en-us/data/gg577609",
+        'description': "The Reactive Extensions (Rx) is a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators. "
     },{
         'label': "Redis",
         'src': "http://redis.io/",
@@ -358,6 +374,14 @@ var data = {
         'src': "http://www.sinatrarb.com/",
         'description': "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort."
     },{
+        'label': "Sinon.js",
+        'src': "http://sinonjs.org/",
+        'description': "Standalone test spies, stubs and mocks for JavaScript. No dependencies, works with any unit testing framework."
+    },{
+        'label': "SignalR",
+        'src': "https://github.com/SignalR/SignalR",
+        'description': "Async signaling library for .NET to help build real-time, multi-user interactive web applications"
+    },{
         'label': "Spine.js",
         'src': "http://spinejs.com/",
         'description': "Spine is a lightweight framework for building JavaScript web applications. Spine gives you an MVC structure and then gets out of your way, allowing you to concentrate on the fun stuff, building awesome web applications."
@@ -389,6 +413,10 @@ var data = {
         'label': "Underscore",
         'src': "http://documentcloud.github.com/underscore/",
         'description': "Underscore is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects."
+    },{
+        'label': "Upshot.js",
+        'src': "http://www.asp.net/single-page-application/an-introduction-to-spa/overview/landingpage",
+        'description': "Rich data access and caching as part of the ASP.NET MVC 4 beta preview."
     },{
         'label': "Varnish",
         'src': "https://www.varnish-cache.org/",
