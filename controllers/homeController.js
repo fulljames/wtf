@@ -10,6 +10,10 @@ var _ = require('underscore');
 
 var data = {
     'items': [{
+        'label': "Amplify.js",
+        'src': "http://amplifyjs.com/",
+        'description': "AmplifyJS is a set of components designed to solve common web application problems with a simplistic API. Amplify's goal is to simplify all forms of data handling by providing a unified API for various data sources."
+    },{
         'label': "Anchor",
         'src': "http://anchorcms.com/",
         'description': "Anchor is a content management system, written in PHP5, built for art-directed posts."
@@ -214,9 +218,17 @@ var data = {
         'src': "http://kohanaframework.org/",
         'description': "An elegant HMVC PHP5 framework that provides a rich set of components for building web applications."
     },{
+        'label': "Knockback",
+        'src': "http://kmalakoff.github.com/knockback/",
+        'description': "Knockback brings Knockout.js magic to Backbone"
+    },{
         'label': "Knockout",
         'src': "http://knockoutjs.com/",
         'description': "Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern"
+    },{
+        'label': "Lawnchair",
+        'src': "http://westcoastlogic.com/lawnchair/",
+        'description': "A lawnchair is sorta like a couch except smaller and outside. perfect for html5 mobile apps that need a lightweight, adaptive, simple and elegant persistence solution."
     },{
         'label': "Laravel",
         'src': "http://laravel.com/",
@@ -258,6 +270,10 @@ var data = {
         'src': "http://mustache.github.com/",
         'description': "Logic-less templates. Available in Ruby, JavaScript, Python, Erlang, PHP, Perl, Objective-C, Java, .NET, Android, C++, Go, Lua, ooc, ActionScript, ColdFusion, Scala, Clojure, Fantom, CoffeeScript, D, and for node.js."
     },{
+        'label': "Nancy",
+        'src': "http://nancyfx.org/",
+        'description': "Nancy is a lightweight, low-ceremony, framework for building HTTP based services on .Net and Mono. The goal of the framework is to stay out of the way as much as possible and provide a super-duper-happy-path to all interactions."
+    },{
         'label': "Nesta",
         'src': "http://nestacms.com/",
         'description': "A Ruby CMS for developers and designers. With simple code that's easy to follow, Nesta is easily extended using the Sinatra web framework."
@@ -269,6 +285,10 @@ var data = {
         'label': "NowJS",
         'src': "http://nowjs.com/",
         'description': "NowJS creates a magic namespace 'now', accessible by server and client. Functions and variables added to now are automatically synced, in real-time. Call client functions from the server and server functions from client"
+    },{
+        'label': "Ninject",
+        'src': "http://www.ninject.org",
+        'description': "Ninject is a lightweight dependency injection framework for .NET applications. It helps you split your application into a collection of loosely-coupled, highly-cohesive pieces, and then glue them back together in a flexible manner. "
     },{
         'label': "Objective-C",
         'src': "https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html",
@@ -297,6 +317,10 @@ var data = {
         'label': "Play",
         'src': "http://www.playframework.org/",
         'description': "The Play framework makes it easier to build Web applications with Java and Scala. Finally a Java Web framework made by Web developers. Discover a clean alternative to bloated enterprise Java stacks. Play focuses on developer productivity and targets RESTful architectures."
+    }, {
+        'label': "-prefix-free",
+        'src': "http://leaverou.github.com/prefixfree/",
+        'description': "-prefix-free lets you use only unprefixed CSS properties everywhere. It works behind the scenes, adding the current browser’s prefix to any CSS code, only when it’s needed."
     },{
         'label': "Processing.js",
         'src': "http://processingjs.org/",
@@ -337,6 +361,10 @@ var data = {
         'label': "Redis",
         'src': "http://redis.io/",
         'description': "Redis is an open source, advanced key-value store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets and sorted sets."
+    },{
+        'label': "Require.js",
+        'src': "http://requirejs.org/",
+        'description': "RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code."
     },{
         'label': "Rhino",
         'src': "http://www.mozilla.org/rhino/",
@@ -379,7 +407,7 @@ var data = {
         'description': "Standalone test spies, stubs and mocks for JavaScript. No dependencies, works with any unit testing framework."
     },{
         'label': "SignalR",
-        'src': "https://github.com/SignalR/SignalR",
+        'src': "http://signalr.net/",
         'description': "Async signaling library for .NET to help build real-time, multi-user interactive web applications"
     },{
         'label': "Spine.js",
@@ -394,9 +422,21 @@ var data = {
         'src': "http://sproutcore.com/",
         'description': "SproutCore is an open-source framework for building blazingly fast, innovative user experiences on the web."
     },{
+        'label': "Squid",
+        'src': "http://www.squid-cache.org/",
+        'description': "Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. "
+    },{
+        'label': "Stapes.js",
+        'src': "http://hay.github.com/stapes/",
+        'description': "A (really) tiny Javascript MVC microframework."
+    },{
         'label': "Struts",
         'src': "http://struts.apache.org/",
         'description': "The Apache Struts web framework is a free open-source solution for creating Java web applications."
+    },{
+        'label': "Sugar.js",
+        'src': "http://sugarjs.com/",
+        'description': "Sugar is a Javascript library that extends native objects with helpful methods. It is designed to be intuitive, unobtrusive, and let you do more with less code."
     },{
         'label': "Symfony",
         'src': "http://symfony.com/",
@@ -417,6 +457,10 @@ var data = {
         'label': "Upshot.js",
         'src': "http://www.asp.net/single-page-application/an-introduction-to-spa/overview/landingpage",
         'description': "Rich data access and caching as part of the ASP.NET MVC 4 beta preview."
+    },{
+        'label': "Vapor.js",
+        'src': "http://vaporjs.com/",
+        'description': "The World's Smallest & Fastest JavaScript Library"
     },{
         'label': "Varnish",
         'src': "https://www.varnish-cache.org/",
