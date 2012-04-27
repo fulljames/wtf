@@ -50,6 +50,10 @@ var data = {
         'src': "http://cakephp.org/",
         'description': "CakePHP enables PHP users at all levels to rapidly develop robust web applications."
     },{
+        'label': "Can.js",
+        'src': "http://canjs.us/",
+        'description': "CanJS is an MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy. CanJS is better, faster, easier, smaller, library-er."
+    },{
         'label': "Cappuccino",
         'src': "http://cappuccino.org/",
         'description': "Cappuccino is an open source framework that makes it easy to build desktop-caliber applications that run in a web browser."
@@ -433,6 +437,10 @@ var data = {
         'label': "Struts",
         'src': "http://struts.apache.org/",
         'description': "The Apache Struts web framework is a free open-source solution for creating Java web applications."
+    },{
+        'label': "StyleDocco",
+        'src': "http://jacobrask.github.com/styledocco/",
+        'description': "StyleDocco generates documentation and style guide documents from your stylesheets."
     },{
         'label': "Sugar.js",
         'src': "http://sugarjs.com/",

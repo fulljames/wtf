@@ -63,6 +63,11 @@ $(document).ready(function () {
     var viewmodel = new wtf.models.Page(data);
     ko.applyBindings(viewmodel);
 
+    $('a.ext').click(function(e) {
+        window.open(this.href);
+        e.preventDefault();
+    });
+
     $(window).resize(function(e) {
         viewmodel.h1w($('h1')[0].clientWidth);
     });
