@@ -6,7 +6,6 @@
         "express": "latest",
         "jade": "latest",
         "less": "latest",
-        "step": "latest",
         "underscore": "latest"
     },
     "engine": "node >=0.6.0"
