@@ -394,6 +394,10 @@ var data = {
         'src': "http://requirejs.org/",
         'description': "RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code."
     },{
+        'label': "Restify",
+        'src': "https://github.com/mcavage/node-restify",
+        'description': "restify is a node.js module built specifically to enable you to build correct REST web services. It borrows heavily from express (intentionally) as that is more or less the de facto API for writing web applications on top of node.js."
+    },{
         'label': "Rhino",
         'src': "http://www.mozilla.org/rhino/",
         'description': "Rhino is an open-source implementation of JavaScript written entirely in Java. It is typically embedded into Java applications to provide scripting to end users."
