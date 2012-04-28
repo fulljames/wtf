@@ -10,6 +10,10 @@ var _ = require('underscore');
 
 var data = {
     'items': [{
+        'label': "AliceJS",
+        'src': "http://blackberry.github.com/Alice/",
+        'description': "AliceJS (A Lightweight Independent CSS Engine) is a micro JavaScript library focused on using hardware-accelerated capabilities (in particular CSS3 features) in modern browsers for generating high-quality, high-end visual effects."
+    },{
         'label': "Amplify.js",
         'src': "http://amplifyjs.com/",
         'description': "AmplifyJS is a set of components designed to solve common web application problems with a simplistic API. Amplify's goal is to simplify all forms of data handling by providing a unified API for various data sources."
@@ -58,6 +62,10 @@ var data = {
         'src': "http://cappuccino.org/",
         'description': "Cappuccino is an open source framework that makes it easy to build desktop-caliber applications that run in a web browser."
     },{
+        'label': "Casper.js",
+        'src': "http://casperjs.org/",
+        'description': "CasperJS is an open source navigation scripting & testing utility written in Javascript and based on PhantomJS — the scriptable headless WebKit engine. It eases the process of defining a full navigation scenario and provides useful high-level functions, methods & syntactic sugar for doing common tasks."
+    },{
         'label': "Celery",
         'src': "http://celeryproject.org/",
         'description': "Celery is an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well."
@@ -102,6 +110,10 @@ var data = {
         'src': "https://www.djangoproject.com/",
         'description': "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design."
     },{
+        'label': "DocPad",
+        'src': "https://github.com/bevry/docpad",
+        'description': "DocPad is a language agnostic document management system. This means you write your website as documents, in whatever language you wish, and DocPad will handle the compiling, templates and layouts for you. For static documents it will generate static files, for dynamic documents it'll re-render them on each request."
+    },{
         'label': "Doctrine",
         'src': "http://www.doctrine-project.org/",
         'description': "The Doctrine Project is the home of a selected set of PHP libraries primarily focused on providing persistence services and related functionality. Its prize projects are a Object Relational Mapper and the Database Abstraction Layer it is built on top of."
@@ -138,6 +150,10 @@ var data = {
         'src': "http://www.sencha.com/products/extjs",
         'description': "Ext JS 4 is the next major advancement in our JavaScript framework. Featuring expanded functionality, plugin-free charting, and a new MVC architecture it's the best Ext JS yet. "
     },{
+        'label': "Faker.js",
+        'src': "https://github.com/marak/Faker.js/",
+        'description': "Generate massive amounts of fake data in the browser and node.js"
+    },{
         'label': "Flask",
         'src': "http://flask.pocoo.org/",
         'description': "Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed!"
@@ -157,6 +173,10 @@ var data = {
         'label': "Grails",
         'src': "http://grails.org/",
         'description': "Grails is a high-productivity web framework based on the Groovy language that embraces the coding by convention paradigm, but is designed specifically for the Java platform."
+    },{
+        'label': "Grunt",
+        'src': "https://github.com/cowboy/grunt",
+        'description': "Grunt is a task-based command line build tool for JavaScript projects."
     },{
         'label': "Hadoop",
         'src': "http://hadoop.apache.org/",
@@ -241,6 +261,10 @@ var data = {
         'label': "LESS",
         'src': "http://lesscss.org/",
         'description': "LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions. LESS runs on both the client-side (IE 6+, Webkit, Firefox) and server-side, with Node.js and Rhino."
+    },{
+        'label': "Lo-Dash",
+        'src': "https://github.com/bestiejs/lodash",
+        'description': "A drop-in replacement for Underscore.js that delivers up to 8x performance improvements, bug fixes, and additional features."
     },{
         'label': "Lua",
         'src': "http://www.lua.org/",
