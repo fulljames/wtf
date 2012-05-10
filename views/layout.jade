@@ -15,7 +15,7 @@ html(lang="en")
 
         link(rel="stylesheet",href="/styles/style.css",type="text/css",media="screen")
 
-        -if (tk) {
+        -if (tk != null) {
             script(src="http://use.typekit.com/#{tk}.js")
             script
                 try{Typekit.load();}catch(e){}

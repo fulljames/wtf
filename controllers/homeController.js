@@ -541,7 +541,7 @@ exports.index = function (req, res) {
     var term = null;
     var title = 'What the Framework?';
 
-    var tk = null;
+    var tk = '';
 
     if (req.headers.host.indexOf('localhost') == -1) {
         if (req.headers.host.indexOf('whattheframework') != -1) {
