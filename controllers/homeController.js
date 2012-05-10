@@ -202,6 +202,10 @@ var data = {
         'src': "http://html5boilerplate.com/",
         'description': "HTML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-safe site."
     },{
+        'label': "HTML9 Responsive Boilerstrap JS",
+        'src': "http://html9responsiveboilerstrapjs.com/",
+        'description': "H9RBS.js is a flexible, dependency-free, lightweight, device-agnostic, modular, baked-in, component framework MVC library shoelacestrap to help you kickstart your responsive CSS-based app architecture backbone kitchensink tweetybirds."
+    },{
         'label': "Jade",
         'src': "https://github.com/visionmedia/jade",
         'description': "Jade is a high performance template engine heavily influenced by Haml and implemented with JavaScript for node."
