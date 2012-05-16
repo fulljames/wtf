@@ -15,7 +15,7 @@ html(lang="en")
 
         link(rel="stylesheet",href="/styles/style.css",type="text/css",media="screen")
 
-        -if (tk != null) {
+        -if (tk != "") {
             script(src="http://use.typekit.com/#{tk}.js")
             script
                 try{Typekit.load();}catch(e){}
@@ -71,5 +71,4 @@ html(lang="en")
             var data = !{JSON.stringify(data)};
 
         script(src="/js/lib/ender.min.js")
-        script(src="/js/lib/knockout-2.0.0.js")
         script(src="/js/site.js")
