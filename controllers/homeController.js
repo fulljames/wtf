@@ -26,6 +26,10 @@ var data = {
         'src': "http://angularjs.org/",
         'description': "What HTML would have been had it been designed for web apps"
     },{
+        'label': "Anvil",
+        'src': "https://github.com/appendto/anvil.js",
+        'description': "Anvil started as a way to build a single javascript module from several source files. Build tools that require a lot of explicit/declarative instructions distract from getting work on the project done."
+    },{
         'label': "ASP.net MVC",
         'src': "http://www.asp.net/mvc",
         'description': "ASP.NET MVC is a framework for building scalable, standards-based web applications using well-established design patterns and the power of ASP.NET and the .NET Framework."
@@ -165,6 +169,10 @@ var data = {
         'label': "Foundation",
         'src': "http://foundation.zurb.com/",
         'description': "An easy to use, powerful, and flexible framework for building prototypes and production code on any kind of device. Start here, build everywhere."
+    },{
+        'label': "FuckItJs",
+        'src': "https://github.com/mattdiamond/fuckitjs",
+        'description': "Javascript Error Steamroller. FuckItJS uses state-of-the-art technology to make sure your javascript code runs whether your compiler likes it or not."
     },{
         'label': "Go",
         'src': "http://golang.org/",
