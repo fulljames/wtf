@@ -326,6 +326,10 @@ var data = {
         'src': "http://nodejs.org",
         'description': "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
     },{
+        'label': "Noir",
+        'src': "http://webnoir.org/",
+        'description': "Noir is a micro-framework that allows you to rapidly develop websites in Clojure."
+    },{
         'label': "NowJS",
         'src': "http://nowjs.com/",
         'description': "NowJS creates a magic namespace 'now', accessible by server and client. Functions and variables added to now are automatically synced, in real-time. Call client functions from the server and server functions from client"
