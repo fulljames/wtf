@@ -42,30 +42,11 @@ html(lang="en")
             != body
 
             footer
-                small WTF itself runs on&nbsp;
-                    a(href="/s/node",data-bind="click: set") Node
-                    | ,
-                    a(href="/s/express",data-bind="click: set") Express
-                    | ,
-                    a(href="/s/knockout",data-bind="click: set") Knockout
-                    | ,
-                    a(href="/s/ender",data-bind="click: set") Ender
-                    |  and
-                    a(href="/s/underscore",data-bind="click: set") Underscore
-                small Detailing&nbsp;
-                    a(href="/s/anything",data-bind="click: set")=data.items.length
-                    |  frameworks since March 04 2012. Tweet
-                    a.ext(href="http://www.twitter.com/fulljames") @fulljames
-                    |  to suggest more.
-                small Devised by&nbsp;
-                    a.ext(href="http://fulljames.net") Stephen
-                    | . Designed by
-                    a.ext(href="http://threefour.co.uk") Alex
-                    | .
-                small View source on&nbsp;
-                    a.ext(href="https://github.com/fulljames/wtf") Github
-                    | . See also
-                    a.ext(href="http://microjs.com") Micro JS
+                small WTF itself runs on <a href="/s/node" data-bind="click: set">Node</a>, <a href="/s/express" data-bind="click: set">Express</a>, <a href="/s/knockout" data-bind="click: set">Knockout</a>, <a href="/s/ender" data-bind="click: set">Ender</a> and <a href="/s/underscore" data-bind="click: set">Underscore</a>.
+                small Detailing <a href="/s/anything" data-bind="click: set">#{data.items.length}</a> frameworks since March 04 2012.
+                small Tweet <a class="ext" href="http://www.twitter.com/fulljames">@fulljames</a> or pull-request on <a class="ext" href="https://github.com/fulljames/wtf">Github</a> to suggest more.
+                small Devised by <a class="ext" href="http://fulljames.net">Stephen</a>. Designed by <a class="ext" href="http://threefour.co.uk">Alex</a>.
+                small See also <a class="ext" href="http://microjs.com">Micro JS</a>.
 
         script
             var data = !{JSON.stringify(data)};

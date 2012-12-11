@@ -1,5 +1,23 @@
 /* What the Framework? ************/
 
+/* Less ************/
+
+@sans :"proxima-nova-soft",sans-serif;
+@serif :"museo-slab",serif;
+
+.rounded (@radius: 1em) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+.fade() {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
 /* Reset ************/
 
 html, body, div, span, h1, h2, p, small, ul, li, fieldset, form, label, footer, header {
@@ -25,31 +43,20 @@ ul {
 }
 
 a {
+    color: #bd1f1f;
     text-decoration:none;
+    font-weight: 700;
+    .fade;
+
+    &:hover {
+      color: darken(#bd1f1f, 30);
+      .fade;
+    }
 }
 
 :focus {
     outline:none;
 }
-
-/* Less ************/
-
-@sans :"proxima-nova-soft",sans-serif;
-@serif :"museo-slab",serif;
-
-.rounded (@radius: 1em) {
-    border-radius: @radius;
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-}
-
-.fade() {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 
 /* Site ************/
 
@@ -77,12 +84,15 @@ body {
     p {
         font-family: @sans;
         line-height:1.5;
-        margin:0 0 1em 0
-    }
+        margin:0 0 1em 0;
 
-    p a {
-        font-weight:700;
-        color:#111
+        a {
+            color: #111;
+
+            &:hover {
+                color: lighten(#111, 30);
+            }
+        }
     }
 
     li {
@@ -94,25 +104,15 @@ body {
             font-family:@sans;
             padding:0 0 1em;
 
-            a {
-                color:#111;
-
-            }
-
             a:hover {
-                border-bottom:1px solid #111
+                border-bottom:1px solid;
             }
-
         }
 
         p {
             margin:0
         }
-
-
     }
-
-
 }
 
 /* Header ************/
@@ -177,15 +177,8 @@ footer {
     }
 
     small a {
-        color:#bd1f1f;
-        font-weight:700;
         .fade;
     }
-
-    small a:hover {
-        color:#851616;
-    }
-
 }
 
 /* Devices ************/
