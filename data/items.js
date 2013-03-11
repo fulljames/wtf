@@ -474,6 +474,10 @@ exports.items = [{
     'src': "http://www.sencha.com/products/touch",
     'description': "Build HTML5 mobile apps for iPhone, Android, and BlackBerry. With over 50 built-in components, state management, and a built-in MVC system, Sencha Touch 2 provides everything you need to create immersive mobile apps."
 },{
+    'label': "Silex",
+    'src': "http://silex.sensiolabs.org/",
+    'description': "Silex is a PHP microframework for PHP 5.3. It is built on the shoulders of Symfony2 and Pimple and also inspired by sinatra."
+},{
     'label': "Sinatra",
     'src': "http://www.sinatrarb.com/",
     'description': "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort."
