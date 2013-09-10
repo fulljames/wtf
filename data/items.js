@@ -577,4 +577,8 @@ exports.items = [{
     'label': "Zepto",
     'src': "http://zeptojs.com/",
     'description': "Zepto.js is a minimalist JavaScript framework for modern web browsers*, with a jQuery-compatible syntax. The goal: a 5-10k library that handles most basic drudge work with a nice API so you can concentrate on getting stuff done."
+},{
+    'label': "data.js",
+    'src': "http://datajs.codeplex.com/",
+    'description': "datajs is a cross-browser JavaScript library that enables data-centric web applications by leveraging modern protocols such as JSON and OData and HTML5-enabled browser features. It's designed to be small, fast and easy to use."
 }]
