@@ -118,6 +118,10 @@ exports.items = [{
     'src': "https://github.com/unscriptable/cujo/wiki/Intro",
     'description': "At its core, cujo.js is an MVC framework that runs in the browser. An MVC framework embraces the concepts of data models, views, and controllers. Data models are abstractions of structured data. Views display and collect information to/from users. Controllers orchestrate and execute the behaviors of an application."
 },{
+    'label': "Data.js",
+    'src': "http://datajs.codeplex.com/",
+    'description': "datajs is a cross-browser JavaScript library that enables data-centric web applications by leveraging modern protocols such as JSON and OData and HTML5-enabled browser features. It's designed to be small, fast and easy to use."
+},{
     'label': "Dart",
     'src': "http://www.dartlang.org/",
     'description': "Dart is a new class-based programming language for creating structured web applications. Developed with the goals of simplicity, efficiency, and scalability, the Dart language combines powerful new language features with familiar language constructs into a clear, readable syntax."
@@ -577,8 +581,4 @@ exports.items = [{
     'label': "Zepto",
     'src': "http://zeptojs.com/",
     'description': "Zepto.js is a minimalist JavaScript framework for modern web browsers*, with a jQuery-compatible syntax. The goal: a 5-10k library that handles most basic drudge work with a nice API so you can concentrate on getting stuff done."
-},{
-    'label': "data.js",
-    'src': "http://datajs.codeplex.com/",
-    'description': "datajs is a cross-browser JavaScript library that enables data-centric web applications by leveraging modern protocols such as JSON and OData and HTML5-enabled browser features. It's designed to be small, fast and easy to use."
 }]
