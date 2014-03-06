@@ -3,10 +3,10 @@
     "description": "Instant search/lookup for that obscure web framework someone just mentioned.",
     "author": "stephen@fulljames.net",
     "dependencies": {
-        "express": "latest",
-        "jade": "latest",
-        "less": "latest",
-        "underscore": "latest"
+        "express": "2.5.8",
+        "jade": "0.20.3",
+        "less": "1.2.2",
+        "underscore": "1.3.1"
     },
     "engine": "node >=0.6.0"
 }
